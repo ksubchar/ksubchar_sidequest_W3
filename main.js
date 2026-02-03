@@ -87,8 +87,8 @@ function keyPressed() {
   // lose.js          → loseKeyPressed()
 
   if (currentScreen === "game") gameKeyPressed();
-  else if (currentScreen === "win") winKeyPressed?.();
-  else if (currentScreen === "lose") loseKeyPressed?.();
+  else if (currentScreen === "win") winKeyPressed();
+  else if (currentScreen === "lose") loseKeyPressed();
 }
 
 // ------------------------------------------------------------
