@@ -20,13 +20,17 @@ function drawGame() {
   textAlign(CENTER, CENTER);
   text("Take care of your pet!", width / 2, 180);
 
+  // Draw a pet
+  fill(225, 255, 0);
+  ellipse(width / 2, 300, 80, 80);
+
   // ---- Buttons (data only) ----
   // These objects store the position/size/label for each button.
   // Using objects makes it easy to pass them into drawButton()
   // and also reuse the same information for hover checks.
   const feedBtn = {
     x: width / 2,
-    y: 320,
+    y: 520,
     w: 240,
     h: 80,
     label: "FEED",
@@ -34,7 +38,7 @@ function drawGame() {
 
   const playBtn = {
     x: width / 2,
-    y: 430,
+    y: 630,
     w: 240,
     h: 80,
     label: "PLAY",
@@ -57,8 +61,8 @@ function drawGame() {
 // Called from main.js only when currentScreen === "start"
 function gameMousePressed() {
   // For input checks, we only need x,y,w,h (label is optional)
-  const feedBtn = { x: width / 2, y: 320, w: 240, h: 80 };
-  const playBtn = { x: width / 2, y: 430, w: 240, h: 80 };
+  const feedBtn = { x: width / 2, y: 520, w: 240, h: 80 };
+  const playBtn = { x: width / 2, y: 630, w: 240, h: 80 };
 
   // If START is clicked, go to the game screen
   if (isHover(feedBtn)) {
