@@ -22,6 +22,16 @@
 // We store the “name” of the current screen as a string.
 // Only one screen should be active at a time.
 let currentScreen = "game"; // "game" | "win" | "lose"
+let petLoveImg;
+let petGoneImg;
+let petStartImg;
+
+// Load pet images
+function preload() {
+  petLoveImg = loadImage("assets/images/petLove.png");
+  petGoneImg = loadImage("assets/images/petGone.png");
+  petStartImg = loadImage("assets/images/petStart.png");
+}
 
 // ------------------------------
 // setup() runs ONCE at the beginning
