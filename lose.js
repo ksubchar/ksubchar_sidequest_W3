@@ -9,6 +9,7 @@
 // ------------------------------
 // drawLose() is called from main.js
 // only when currentScreen === "lose"
+
 function drawLose() {
   // Red-tinted background to communicate failure
   background(255, 210, 210);
@@ -18,11 +19,14 @@ function drawLose() {
 
   // Main message
   textSize(40);
-  text("Oh no, your pet ran away...", width / 2, 300);
+  text("Oh no, your pet ran away...", width / 2, 200);
 
   // Instruction text
   textSize(20);
-  text("Click or press R to take better care of your pet.", width / 2, 360);
+  text("Click or press R to take better care of your pet.", width / 2, 260);
+
+  // Pet Image
+  image(petGoneImg, 250, 280, 280, 400);
 }
 
 // ------------------------------
