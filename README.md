@@ -1,6 +1,6 @@
 # ksubchar_sidequest_W3
 
-## Side Quest Week 4: Interactive pet friend simulator
+## Side Quest Week 3: Interactive pet friend simulator
 
 ---
 
@@ -32,4 +32,4 @@ Kaitlyn Subcharoen (previously by Karen Cochrane and David Han)
 > - `assets/image/petStart.png` - start screen
 > - `assets/image/petLove.png` - win screen
 > - `assets/image/petGone.png` - lose screen
->   (original drawing)
+> - All original drawings
